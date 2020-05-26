@@ -3,7 +3,19 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  fakeData: {
+    users: [
+      {
+        email: 'test@etu-webschoolfactory.fr',
+        password: 'test'
+      },
+      {
+        email: 'test@techandcodefactory.fr',
+        password: 'test'
+      }
+    ]
+  }
 };
 
 /*

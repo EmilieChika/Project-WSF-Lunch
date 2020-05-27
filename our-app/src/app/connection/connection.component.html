@@ -1,2 +1,18 @@
-<h1>Login
-    <h1>
+<h2>Connexion</h2>
+
+<form [formGroup]="connectionForm" (ngSubmit)="onSubmit()">
+    <fieldset> Entrez votre vos identifiants WebSchool/TechAndCode</fieldset>
+    <div class="form-group">
+        <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">L'email ne correspond pas </div>
+        <label for="email"> Entrez votre mail
+        <input  type="email" formControlName="email">
+    </label>
+    </div>
+    <div class="form-group">
+        <div *ngIf="password.invalid && (password.dirty || password.touched)" class="alert alert-danger">Le mot de passe est incorrect </div>
+        <label for="password"> Entrez votre mot de passe
+        <input type="password" formControlName="password"></label>
+    </div>
+    <p> <a href=""> Mot de passe oublié ? </a></p>
+    <button type="button" class="btn btn-success" [disabled]="!connectionForm.valid">Se connecter</button>
+</form>

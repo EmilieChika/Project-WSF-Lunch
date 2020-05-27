@@ -1,9 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule,FormsModule} from '@angular/forms';
+
+
 
 import { AppComponent } from './app.component';
 import { ConnectionComponent } from './connection/connection.component';
+import { RouterModule, Routes} from '@angular/router';
+import { from } from 'rxjs';
+
+
+const routes: Routes= [
+  {path: 'connection', component: ConnectionComponent }
+]
+
 
 @NgModule({
   declarations: [
@@ -12,7 +22,10 @@ import { ConnectionComponent } from './connection/connection.component';
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    RouterModule.forRoot(routes)
+
    
     ],
   providers: [],

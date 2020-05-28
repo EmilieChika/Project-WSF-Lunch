@@ -8,17 +8,20 @@ import { AppComponent } from './app.component';
 import { ConnectionComponent } from './connection/connection.component';
 import { RouterModule, Routes} from '@angular/router';
 import { from } from 'rxjs';
+import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes= [
-  {path: 'connection', component: ConnectionComponent }
+  {path: 'connection', component: ConnectionComponent },
+  {path: '', component: HomeComponent}
 ]
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ConnectionComponent
+    ConnectionComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

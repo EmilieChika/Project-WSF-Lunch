@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -7,15 +7,26 @@ import { FormGroup } from '@angular/forms';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  public filterForm = new FormGroup({
+    
+   
+ });
 
-public filterForm = new FormGroup ({
+  foods = [
+    
+    {type: 'Hamburger'},
+    {type: 'pizza'},
+    {type:'Chinois'}, 
+    {type:'Grec'}, 
+    {type:'Crêpes salées'}
+  ]
 
-
-});
-
-  constructor() { }
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
-  }
 
+    this.filterForm = this.fb.group({
+filterControl:['Hamburger']
+    });
+  }
 }

@@ -20,13 +20,42 @@
 <div class="choise">
     <img src="assets/img/lunch.jpg" />
 
+    <div class="category">
 
-    <form [formGroup]="filterForm">
-        <fieldset>Filtrez votre envie avec plus de précision</fieldset>
-        <select formControlName="filterControl">
-            <option [value]="food" *ngFor="let food of foods">
-   {{food.type}}</option>
+        <form [formGroup]="filterForm">
+            <fieldset>Filtrez votre envie avec plus de précision</fieldset>
+            <label class="studentmenu">
+                <input type="checkbox"> Menu étudiant
+                </label>
+            <select formControlName="filterControl">
+            <option value="food" *ngFor="let food of foods" >
+                {{food.type}}</option>
+
 </select>
-    </form>
+
+        </form>
+
+        <!--<label class="studentmenu">
+<input type="checkbox"> Menu étudiant
+</label>-->
+        <div class="price">
+
+            <p class="priceCursor">Fourchette de prix </p>
+
+            <div class="amount">
+
+
+
+                <label for="price">
+
+               <input type="texte" class="min" placeholder="Prix min">  à<input type="texte" class="min"placeholder="Prix max">
+
+           </label>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </div>

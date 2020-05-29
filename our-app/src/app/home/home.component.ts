@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
+/*import * as $ from 'jquery'; */
 
 @Component({
   selector: 'app-home',
@@ -15,7 +16,7 @@ export class HomeComponent implements OnInit {
   foods = [
     
     {type: 'Hamburger'},
-    {type: 'pizza'},
+    {type: 'Pizza'},
     {type:'Chinois'}, 
     {type:'Grec'}, 
     {type:'Crêpes salées'}
@@ -26,7 +27,31 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
 
     this.filterForm = this.fb.group({
-filterControl:['Hamburger']
+filterControl: ['']
     });
+ /* cursor price bar */
+
+
+ /*$(document).ready(function(){
+  var jquery: any;
+
+  interface jquery {
+    slider(options?: any): any;
   }
+   $("#cursorovert").slider({ orientation:"vertical"});
+  $("#cursor").slider({
+      min:0,
+      max: 25,
+      value: 0,
+      step: 1,
+      slide: function(evt, ui) {
+        $('#montant').val("hdehheheh"+ui.value + "€" );
+      }
+  
+    });
+  
+  });*/
+   
+  } 
+
 }

@@ -20,11 +20,13 @@
 <div class="choise">
     <img src="assets/img/lunch.jpg" />
 
-    <form [formGroup]="filterForm">
-        <fieldset>Filtrez pour plus de précision</fieldset>
-        <div class="form-group">
-            <input type="text" class="text">
 
-        </div>
+    <form [formGroup]="filterForm">
+        <fieldset>Filtrez votre envie avec plus de précision</fieldset>
+        <select formControlName="filterControl">
+            <option [value]="food" *ngFor="let food of foods">
+   {{food.type}}</option>
+</select>
     </form>
+
 </div>

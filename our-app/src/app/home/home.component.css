@@ -60,6 +60,7 @@
     /* price */
     
     .min {
+        margin-top: 20px;
         margin-left: 20px;
         width: 20%;
         border-radius: 10px;
@@ -68,4 +69,26 @@
     
     .price {
         margin-top: 40px;
+    }
+    /* stars of comments */
+    
+    .comments {
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    
+    .stars {
+        font-size: 30px;
+        margin-left: 50px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .stars:hover {
+        color: #FF7F50;
+    }
+    
+    button {
+        margin-top: 50px;
+        margin-left: 100px;
     }

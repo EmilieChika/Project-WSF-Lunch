@@ -6,27 +6,27 @@
 
 
 <div class="container mt-2">
-    <ul class="list">
-        <li class="text-black bg-light p-2 rounded"><a href="">Hamburgeur</a></li>
-        <li class="text-black bg-light p-2 rounded"><a href="">Pizza</a></li>
-        <li class="text-black bg-light p-2 rounded"><a href="">Chinois</a></li>
-        <li class="text-black bg-light p-2 rounded"><a href="">Grec</a></li>
-        <li class="text-black bg-light p-2 rounded"><a href="">Crêpes salées</a></li>
+  <ul class="list">
+    <li class="text-black bg-light p-2 rounded"><a href="">Hamburgeur</a></li>
+    <li class="text-black bg-light p-2 rounded"><a href="">Pizza</a></li>
+    <li class="text-black bg-light p-2 rounded"><a href="">Chinois</a></li>
+    <li class="text-black bg-light p-2 rounded"><a href="">Grec</a></li>
+    <li class="text-black bg-light p-2 rounded"><a href="">Crêpes salées</a></li>
 
-    </ul>
+  </ul>
 
 </div>
 
 <div class="choise">
-    <img src="assets/img/lunch.jpg" />
+  <img src="assets/img/lunch.jpg" />
 
 
-    <form [formGroup]="filterForm">
-        <fieldset>Filtrez votre envie avec plus de précision</fieldset>
-        <select formControlName="filterControl">
-            <option [value]="food" *ngFor="let food of foods">
-   {{food.type}}</option>
-</select>
-    </form>
+  <form [formGroup]="filterForm">
+    <fieldset>Filtrez votre envie avec plus de précision</fieldset>
+    <select formControlName="filterControl">
+      <option [value]="food" *ngFor="let food of foods">
+        {{food.type}}</option>
+    </select>
+  </form>
 
 </div>

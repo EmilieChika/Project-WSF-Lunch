@@ -72,17 +72,3 @@ a {
 .distance {
     margin: 0 0 10px;
 }
-
-
-/* button comments */
-
-.comments {
-    margin: 0;
-}
-
-.btn {
-    background-color: #F5F5DC;
-    margin-left: 5px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-}

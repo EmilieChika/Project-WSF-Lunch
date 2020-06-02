@@ -1,0 +1,88 @@
+/* Favorite part */
+
+h2 {
+    margin-top: 80px;
+}
+
+img {
+    border-radius: 5px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+
+/* Fiches restau */
+
+.all {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* texte */
+
+.info {
+    background-color: #FAEBD7;
+    border-radius: 5px;
+}
+
+.name {
+    padding-top: 10px;
+    margin-left: 100px;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p {
+    margin-left: 10px;
+}
+
+.trait {
+    border: 1px solid grey;
+    width: 90%;
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #FF7F50;
+}
+
+.less {
+    color: black;
+}
+
+.rating {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.km {
+    margin-top: 10px;
+    margin-left: 130px;
+}
+
+.km2 {
+    margin-top: 10px;
+    margin-left: 230px;
+}
+
+.distance {
+    margin: 0 0 10px;
+}
+
+
+/* button comments */
+
+.comments {
+    margin: 0;
+}
+
+.btn {
+    background-color: #F5F5DC;
+    margin-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}

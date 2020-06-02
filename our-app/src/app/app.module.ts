@@ -9,6 +9,7 @@ import { ConnectionComponent } from './connection/connection.component';
 import { RouterModule, Routes} from '@angular/router';
 import { from } from 'rxjs';
 import { HomeComponent } from './home/home.component';
+import { FoodComponent } from './food/food.component';
 
 
 const routes: Routes= [
@@ -21,7 +22,8 @@ const routes: Routes= [
   declarations: [
     AppComponent,
     ConnectionComponent,
-    HomeComponent
+    HomeComponent,
+    FoodComponent
   ],
   imports: [
     BrowserModule,

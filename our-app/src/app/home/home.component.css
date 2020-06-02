@@ -52,9 +52,11 @@
     }
 
     fieldset {
+
       font-size: 18px;
       margin-left: 90px;
       margin-top: 20px;
+
     }
 
     .studentmenu {
@@ -62,6 +64,7 @@
     }
 
     .category {
+
       margin-top: 100px;
       margin-bottom: 100px;
       background-color: #FAEBD7;
@@ -105,7 +108,4 @@
       color: #FF7F50;
     }
 
-    button {
-      margin-top: 50px;
-      margin-left: 100px;
-    }
+

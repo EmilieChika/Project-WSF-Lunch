@@ -8,11 +8,11 @@ export const environment = {
     users: [
       {
         email: 'test@etu-webschoolfactory.fr',
-        password: 'test'
+        password: 'webschool'
       },
       {
         email: 'test@techandcodefactory.fr',
-        password: 'test'
+        password: 'webschool'
       }
     ]
   }

@@ -1,73 +1,79 @@
-<h2>Retrouvez dès maintenant les restaurants alentours de la Webschool </h2>
-
-<h3>Selectionner la catégorie de votre choix </h3>
-
-
-
+<div class="jumbotron jumbotron-fluid">
+  <div class="container introduction">
+      <h1 class="display-4">Retrouvez dès maintenant les restaurants alentours de la Webschool</h1>
+      <p class="lead">Selectionner la catégorie de votre choix</p>
+  </div>
+</div>
 
 <div class="container mt-2">
-    <ul class="list">
-        <li class="text-black bg-light p-2 rounded"><a href="">Hamburgeur</a></li>
-        <li class="text-black bg-light p-2 rounded"><a href="">Pizza</a></li>
-        <li class="text-black bg-light p-2 rounded"><a href="">Chinois</a></li>
-        <li class="text-black bg-light p-2 rounded"><a href="">Grec</a></li>
-        <li class="text-black bg-light p-2 rounded"><a href="">Crêpes salées</a></li>
-
-    </ul>
-
+  <ul class="list">
+      <li class="text-black bg-light p-2 rounded"><a href=""><img src="assets/img/fast-food.png">fast-food</a></li>
+      <li class="text-black bg-light p-2 rounded"><a href=""><img src="assets/img/asian-food.png">asian-food</a></li>
+      <li class="text-black bg-light p-2 rounded"><a href=""><img src="assets/img/african-food.png">african-food</a></li>
+      <li class="text-black bg-light p-2 rounded"><a href=""><img src="assets/img/vegan-food.png">veggie</a></li>
+      <li class="text-black bg-light p-2 rounded"><a href=""><img src="assets/img/autres.png">autres</a></li>
+  </ul>
 </div>
 
 <div class="choise">
-    <img src="assets/img/lunch.jpg" />
+  <img src="assets/img/lunch.jpg" />
 
-    <div class="category">
+  <div class="category">
+
+    <form [formGroup]="filterForm">
+      <fieldset>Filtrez votre envie avec plus de précision</fieldset>
+      <label class="studentmenu">
+        <input type="checkbox"> Menu étudiant
+      </label>
+      <select formControlName="filterControl">
+        <option value="food" *ngFor="let food of foods">
+          {{food.type}}</option>
 
         <form [formGroup]="filterForm">
-            <fieldset>Filtrez votre envie avec plus de précision</fieldset>
-            <label class="studentmenu">
-                <input type="checkbox"> Menu étudiant
-                </label>
-            <select formControlName="filterControl">
-            <option value="food" *ngFor="let food of foods" >
-                {{food.type}}</option>
-
-</select>
-
+          <fieldset>Filtrez votre envie avec plus de précision</fieldset>
+          <select formControlName="filterControl">
+            <option [value]="food" *ngFor="let food of foods">
+              {{food.type}}</option>
+          </select>
         </form>
+      </select>
 
-        <!--<label class="studentmenu">
+    </form>
+
+    <!--<label class="studentmenu">
 <input type="checkbox"> Menu étudiant
 </label>-->
-        <div class="price">
+    <div class="price">
 
-            <p class="priceCursor">Fourchette de prix : </p>
+      <p class="priceCursor">Fourchette de prix : </p>
 
-            <div class="amount">
+      <div class="amount">
 
 
 
-                <label for="price">
+        <label for="price">
 
-               <input type="texte" class="min" placeholder="Prix min">  à<input type="texte" class="min"placeholder="Prix max">
+          <input type="texte" class="min" placeholder="Prix min"> à<input type="texte" class="min"
+            placeholder="Prix max">
 
-           </label>
+        </label>
 
-            </div>
-
-        </div>
-
-        <div class="rate">
-            <p class="comments">Moyenne des commentaires : </p>
-            <a href="#1" class="stars">☆</a>
-            <a href="#2" class="stars">☆</a>
-            <a href="#3" class="stars">☆</a>
-            <a href="#4" class="stars">☆</a>
-            <a href="#5" class="stars">☆</a>
-        </div>
-
-        <button class="btn btn-warning">Filtrer</button>
-        <button class="btn btn-danger">Tout effacer</button>
+      </div>
 
     </div>
+
+    <div class="rate">
+      <p class="comments">Moyenne des commentaires : </p>
+      <a href="#1" class="stars">☆</a>
+      <a href="#2" class="stars">☆</a>
+      <a href="#3" class="stars">☆</a>
+      <a href="#4" class="stars">☆</a>
+      <a href="#5" class="stars">☆</a>
+    </div>
+
+    <button class="btn btn-warning">Filtrer</button>
+    <button class="btn btn-danger">Tout effacer</button>
+
+  </div>
 
 </div>

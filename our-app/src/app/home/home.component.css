@@ -1,95 +1,111 @@
     /* Category of food selection */
-    
-    .list {
-        list-style: none;
-        flex-direction: row;
-        display: flex;
-        justify-content: space-between;
-        cursor: pointer;
-        margin-top: 50px;
-        font-size: 18px;
-    }
-    /* Introduction of site */
-    
-    h2 {
-        margin-top: 50px;
-        align-items: center;
-    }
-    
-    h3 {
-        margin-top: 50px;
-        text-align: center;
-    }
+
+    /*baniere intro*/
+
+    .jumbotron{
+      background-image: url('https://images.unsplash.com/photo-1547573854-74d2a71d0826?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+      background-size: cover;
+      height: 85vh;
+      margin-bottom: 0;
+      text-align: center;
+  }
+
+  .introduction{
+    margin-top: 14%;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 2px 2px black;
+  }
+  /*baniere menu*/
+
+  .list {
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-top: 40px;
+    font-size: 18px;
+    align-items: center;
+  }
+
+  .list img{
+    width: 70px;
+  }
+
     /* Picture and form */
-    
+
     .choise {
-        display: flex;
-        flex-direction: row;
+      display: flex;
+      flex-direction: row;
     }
-    
-    img {
-        margin-top: 100px;
+
+    .choise img {
+      margin-top: 100px;
+      margin-bottom: 100px;
     }
-    
+
     select {
-        margin-left: 30px;
-        border-radius: 10px;
-        margin-top: 40px;
+      margin-left: 30px;
+      border-radius: 10px;
+      margin-top: 40px;
     }
-    
+
     fieldset {
-        font-size: 18px;
-        margin-left: 60px;
-        margin-top: 20px;
+
+      font-size: 18px;
+      margin-left: 90px;
+      margin-top: 20px;
+
     }
-    
+
     .studentmenu {
-        margin-left: 15px;
+      margin-left: 15px;
     }
-    
+
     .category {
-        margin-top: 100px;
-        background-color: #FAEBD7;
-        width: 40%;
+
+      margin-top: 100px;
+      margin-bottom: 100px;
+      background-color: #FAEBD7;
+      width: 100%;
     }
-    
+
     .priceCursor {
-        margin-top: 10px;
-        margin-left: 20px;
+      margin-top: 10px;
+      margin-left: 20px;
     }
+
     /* price */
-    
+
     .min {
-        margin-top: 20px;
-        margin-left: 20px;
-        width: 20%;
-        border-radius: 10px;
-        flex-direction: row;
+      margin-top: 20px;
+      margin-left: 20px;
+      width: 20%;
+      border-radius: 10px;
+      flex-direction: row;
     }
-    
+
     .price {
-        margin-top: 40px;
+      margin-top: 40px;
     }
+
     /* stars of comments */
-    
+
     .comments {
-        margin-top: 30px;
-        margin-left: 20px;
+      margin-top: 30px;
+      margin-left: 20px;
     }
-    
+
     .stars {
-        font-size: 30px;
-        margin-left: 50px;
-        text-decoration: none;
-        color: black;
+      font-size: 30px;
+      margin-left: 50px;
+      text-decoration: none;
+      color: black;
     }
-    
+
     .stars:hover {
-        color: #FF7F50;
+      color: #FF7F50;
     }
-    
-    button {
-        margin-top: 50px;
-        margin-left: 100px;
-        margin-bottom: 10px;
-    }
+
+

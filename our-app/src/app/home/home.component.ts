@@ -29,28 +29,7 @@ export class HomeComponent implements OnInit {
     this.filterForm = this.fb.group({
 filterControl: ['']
     });
- /* cursor price bar */
 
-
- /*$(document).ready(function(){
-  var jquery: any;
-
-  interface jquery {
-    slider(options?: any): any;
-  }
-   $("#cursorovert").slider({ orientation:"vertical"});
-  $("#cursor").slider({
-      min:0,
-      max: 25,
-      value: 0,
-      step: 1,
-      slide: function(evt, ui) {
-        $('#montant').val("hdehheheh"+ui.value + "€" );
-      }
-  
-    });
-  
-  });*/
    
   } 
 

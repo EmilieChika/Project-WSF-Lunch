@@ -9,17 +9,17 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 })
 export class HomeComponent implements OnInit {
   public filterForm = new FormGroup({
-    
-   
+
+
  });
 
   foods = [
-    
-    {type: 'Hamburger'},
-    {type: 'Pizza'},
-    {type:'Chinois'}, 
-    {type:'Grec'}, 
-    {type:'Crêpes salées'}
+
+    {type: 'fast-food'},
+    {type: 'asian-food'},
+    {type:'african-food'},
+    {type:'veggie'},
+    {type:'autres'}
   ]
 
   constructor(private fb: FormBuilder) { }
@@ -47,11 +47,11 @@ filterControl: ['']
       slide: function(evt, ui) {
         $('#montant').val("hdehheheh"+ui.value + "€" );
       }
-  
+
     });
-  
+
   });*/
-   
-  } 
+
+  }
 
 }

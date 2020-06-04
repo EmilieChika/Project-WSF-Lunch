@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <h2>
     Retrouvez dès maintenant les restaurants/fast-food alentours de la Webschool </h2>
 
@@ -12,48 +11,22 @@
         <h1 class="display-4">Retrouvez dès maintenant les restaurants alentours de la Webschool</h1>
         <p class="lead">Selectionner la catégorie de votre choix</p>
     </div>
-=======
-
-<h2>Retrouvez dès maintenant les restaurants/fast-food alentours de la Webschool </h2>
-
-<h3>Selectionner la catégorie de votre choix </h3>
 
 
 
+    <app-bar></app-bar>
 
-<div class="jumbotron jumbotron-fluid">
-  <div class="container introduction">
-      <h1 class="display-4">Retrouvez dès maintenant les restaurants alentours de la Webschool</h1>
-      <p class="lead">Selectionner la catégorie de votre choix</p>
-  </div>
-</div>
+    <div class="choise">
+        <img src="assets/img/lunch.jpg" alt="tableLunch" />
 
+        <div class="category">
 
-<div class="container mt-2">
-  <ul class="list">
-      <li class="text-black bg-light p-2 rounded"><a href=""><img src="assets/img/fast-food.png">fast-food</a></li>
-      <li class="text-black bg-light p-2 rounded"><a href=""><img src="assets/img/asian-food.png">asian-food</a></li>
-      <li class="text-black bg-light p-2 rounded"><a href=""><img src="assets/img/african-food.png">african-food</a></li>
-      <li class="text-black bg-light p-2 rounded"><a href=""><img src="assets/img/vegan-food.png">veggie</a></li>
-      <li class="text-black bg-light p-2 rounded"><a href=""><img src="assets/img/autres.png">autres</a></li>
-  </ul>
->>>>>>> f913f1642e210ec3763323b2f0b812ded5446297
-</div>
-
-
-<app-bar></app-bar>
-
-<div class="choise">
-    <img src="assets/img/lunch.jpg" alt="tableLunch" />
-
-    <div class="category">
-
-        <form [formGroup]="filterForm">
-            <fieldset>Filtrez votre envie avec plus de précision</fieldset>
-            <label class="studentmenu">
+            <form [formGroup]="filterForm">
+                <fieldset>Filtrez votre envie avec plus de précision</fieldset>
+                <label class="studentmenu">
         <input type="checkbox"> Menu étudiant
       </label>
-            <select formControlName="filterControl">
+                <select formControlName="filterControl">
         <option value="food" *ngFor="let food of foods">
           {{food.type}}</option>
 
@@ -63,54 +36,50 @@
             <option [value]="food" *ngFor="let food of foods">
               {{food.type}}</option>
           </select>
-        </form>
-        </select>
+            </form>
+            </select>
 
-        </form>
+            </form>
 
-        <!--<label class="studentmenu">
+            <!--<label class="studentmenu">
 <input type="checkbox"> Menu étudiant
 </label>-->
-        <div class="price">
+            <div class="price">
 
-            <p class="priceCursor">Fourchette de prix : </p>
+                <p class="priceCursor">Fourchette de prix : </p>
 
-            <div class="amount">
+                <div class="amount">
 
 
 
-                <label for="price">
+                    <label for="price">
 
           <input type="texte" class="min" placeholder="Prix min"> à<input type="texte" class="min"
             placeholder="Prix max">
 
         </label>
 
+                </div>
+
             </div>
 
-        </div>
+            <div class="rate">
+                <p class="comments">Moyenne des commentaires : </p>
+                <a href="#1" class="stars">☆</a>
+                <a href="#2" class="stars">☆</a>
+                <a href="#3" class="stars">☆</a>
+                <a href="#4" class="stars">☆</a>
+                <a href="#5" class="stars">☆</a>
+            </div>
 
-        <div class="rate">
-            <p class="comments">Moyenne des commentaires : </p>
-            <a href="#1" class="stars">☆</a>
-            <a href="#2" class="stars">☆</a>
-            <a href="#3" class="stars">☆</a>
-            <a href="#4" class="stars">☆</a>
-            <a href="#5" class="stars">☆</a>
-        </div>
+            <button class="btn btn-warning">Filtrer</button>
+            <button class="btn btn-danger">Tout effacer</button>
 
-        <button class="btn btn-warning">Filtrer</button>
-        <button class="btn btn-danger">Tout effacer</button>
+        </div>
 
     </div>
 
-</div>
-<<<<<<< HEAD
-<app-food>
-</app-food>
-=======
 
 
-<app-food></app-food>
 
->>>>>>> f913f1642e210ec3763323b2f0b812ded5446297
+    <app-food></app-food>

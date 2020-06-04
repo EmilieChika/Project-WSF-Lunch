@@ -35,9 +35,17 @@
     }
     
     fieldset {
+<<<<<<< HEAD
         font-size: 18px;
         margin-left: 90px;
         margin-top: 20px;
+=======
+
+      font-size: 18px;
+      margin-left: 90px;
+      margin-top: 20px;
+
+>>>>>>> f913f1642e210ec3763323b2f0b812ded5446297
     }
     
     .studentmenu {
@@ -45,10 +53,18 @@
     }
     
     .category {
+<<<<<<< HEAD
         margin-top: 100px;
         margin-bottom: 100px;
         background-color: #FAEBD7;
         width: 40%;
+=======
+
+      margin-top: 100px;
+      margin-bottom: 100px;
+      background-color: #FAEBD7;
+      width: 100%;
+>>>>>>> f913f1642e210ec3763323b2f0b812ded5446297
     }
     
     .priceCursor {
@@ -84,9 +100,14 @@
     .stars:hover {
         color: #FF7F50;
     }
+<<<<<<< HEAD
     
     button {
         margin-top: 20px;
         margin-left: 100px;
         margin-bottom: 10px;
     }
+=======
+
+
+>>>>>>> f913f1642e210ec3763323b2f0b812ded5446297

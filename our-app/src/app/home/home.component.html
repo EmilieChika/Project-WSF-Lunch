@@ -1,37 +1,43 @@
-<h2>Retrouvez dès maintenant les restaurants/fast-food alentours de la Webschool </h2>
+<h2>
+    Retrouvez dès maintenant les restaurants/fast-food alentours de la Webschool </h2>
 
 <h3>Selectionner la catégorie de votre choix </h3>
 
 
 
 
-<div class="container mt-2">
-    <ul class="list">
-        <li class="text-black bg-light p-2 rounded"><a href="">Hamburgeur</a></li>
-        <li class="text-black bg-light p-2 rounded"><a href="">Pizza</a></li>
-        <li class="text-black bg-light p-2 rounded"><a href="">Chinois</a></li>
-        <li class="text-black bg-light p-2 rounded"><a href="">Grec</a></li>
-        <li class="text-black bg-light p-2 rounded"><a href="">Crêpes salées</a></li>
-
-    </ul>
-
+<div class="jumbotron jumbotron-fluid">
+    <div class="container introduction">
+        <h1 class="display-4">Retrouvez dès maintenant les restaurants alentours de la Webschool</h1>
+        <p class="lead">Selectionner la catégorie de votre choix</p>
+    </div>
 </div>
 
+
+<app-bar></app-bar>
+
 <div class="choise">
-    <img src="assets/img/lunch.jpg" />
+    <img src="assets/img/lunch.jpg" alt="tableLunch" />
 
     <div class="category">
 
         <form [formGroup]="filterForm">
             <fieldset>Filtrez votre envie avec plus de précision</fieldset>
             <label class="studentmenu">
-                <input type="checkbox"> Menu étudiant
-                </label>
+        <input type="checkbox"> Menu étudiant
+      </label>
             <select formControlName="filterControl">
-            <option value="food" *ngFor="let food of foods" >
-                {{food.type}}</option>
+        <option value="food" *ngFor="let food of foods">
+          {{food.type}}</option>
 
-</select>
+        <form [formGroup]="filterForm">
+          <fieldset>Filtrez votre envie avec plus de précision</fieldset>
+          <select formControlName="filterControl">
+            <option [value]="food" *ngFor="let food of foods">
+              {{food.type}}</option>
+          </select>
+        </form>
+        </select>
 
         </form>
 
@@ -48,9 +54,10 @@
 
                 <label for="price">
 
-               <input type="texte" class="min" placeholder="Prix min">  à<input type="texte" class="min"placeholder="Prix max">
+          <input type="texte" class="min" placeholder="Prix min"> à<input type="texte" class="min"
+            placeholder="Prix max">
 
-           </label>
+        </label>
 
             </div>
 
@@ -71,5 +78,5 @@
     </div>
 
 </div>
-
-<app-food></app-food>
+<app-food>
+</app-food>

@@ -10,11 +10,14 @@ import { RouterModule, Routes} from '@angular/router';
 import { from } from 'rxjs';
 import { HomeComponent } from './home/home.component';
 import { FoodComponent } from './food/food.component';
+import { FastFoodComponent } from './fast-food/fast-food.component';
+import { BarComponent } from './bar/bar.component';
 
 
 const routes: Routes= [
   {path: 'connection', component: ConnectionComponent },
-  {path: '', component: HomeComponent}
+  {path: '', component: HomeComponent},
+  {path: 'fast-food', component: FastFoodComponent}
 ]
 
 
@@ -23,7 +26,9 @@ const routes: Routes= [
     AppComponent,
     ConnectionComponent,
     HomeComponent,
-    FoodComponent
+    FoodComponent,
+    FastFoodComponent,
+    BarComponent
   ],
   imports: [
     BrowserModule,

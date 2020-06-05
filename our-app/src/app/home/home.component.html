@@ -12,12 +12,16 @@
         <p class="lead">Selectionner la catégorie de votre choix</p>
     </div>
 
+
+
+
     <app-bar></app-bar>
 
     <div class="choise">
         <img src="assets/img/lunch.jpg" alt="tableLunch" />
 
         <div class="category">
+
 
             <form [formGroup]="filterForm">
                 <fieldset>Filtrez votre envie avec plus de précision</fieldset>
@@ -38,6 +42,7 @@
             </select>
 
             </form>
+
 
 
             <div class="price">
@@ -74,4 +79,5 @@
         </div>
 
     </div>
+
     <app-food></app-food>
